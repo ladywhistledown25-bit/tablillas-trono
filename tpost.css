@@ -211,26 +211,39 @@ body.light-mode .tpost-data .tpost-label { color: var(--accent-dark); }
 }
 body.light-mode .tpost-footer { color: var(--accent-dark); }
 
-/* ---- Créditos ---- */
+/* ---- Créditos (fuera del borde) ---- */
 .tpost-credit {
+  --credit-accent: #caa24d;
+  --credit-hover: #e8ce8f;
   text-align: center;
   font-family: 'Marcellus', serif;
-  font-size: 9px;
-  letter-spacing: 3px;
+  font-size: 14px;
+  letter-spacing: 8px;
   text-transform: uppercase;
-  color: var(--accent);
-  margin: 6px 30px 0;
-  padding-top: 10px;
-  border-top: 1px solid var(--accent);
+  color: var(--credit-accent);
+  margin: 18px auto 4px;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+body.light-mode .tpost-credit {
+  --credit-accent: #b18a35;
+  --credit-hover: #8a6420;
+}
+.tpost-credit::before {
+  content: "✦ ";
+  letter-spacing: 6px;
+}
+.tpost-credit::after {
+  content: " ✦";
+  letter-spacing: 6px;
 }
 .tpost-credit a,
 .tpost-credit a:link,
 .tpost-credit a:visited {
-  color: var(--accent) !important;
+  color: var(--credit-accent) !important;
   text-decoration: none !important;
-  font-weight: 600;
+  letter-spacing: 8px;
 }
-.tpost-credit a:hover { color: var(--accent-light) !important; }
+.tpost-credit a:hover { color: var(--credit-hover) !important; }
 
 @media (max-width: 700px) {
   .tpost-data { grid-template-columns: repeat(2, 1fr); }
