@@ -211,37 +211,47 @@ body.light-mode .tpost-data .tpost-label { color: var(--accent-dark); }
 }
 body.light-mode .tpost-footer { color: var(--accent-dark); }
 
-/* ---- Créditos (fuera del borde) ---- */
+/* ---- Créditos (bloque propio, fuera del borde) ---- */
 .tpost-credit {
   --credit-accent: #caa24d;
   --credit-hover: #e8ce8f;
   text-align: center;
-  font-family: 'Marcellus', serif;
-  font-size: 14px;
-  letter-spacing: 8px;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 16px;
+  letter-spacing: 6px;
   text-transform: uppercase;
   color: var(--credit-accent);
-  margin: 18px auto 4px;
-  text-shadow: 0 1px 3px rgba(0,0,0,.4);
+  margin: 20px auto 4px;
+  text-shadow: 0 0 14px rgba(202,162,77,.45), 0 1px 3px rgba(0,0,0,.45);
+  white-space: nowrap;
 }
 body.light-mode .tpost-credit {
   --credit-accent: #b18a35;
   --credit-hover: #8a6420;
 }
 .tpost-credit::before {
-  content: "✦ ";
-  letter-spacing: 6px;
+  content: "✦";
+  color: var(--credit-accent);
+  margin-right: 14px;
+  font-family: 'Marcellus', serif;
+  font-size: 13px;
+  vertical-align: middle;
 }
 .tpost-credit::after {
-  content: " ✦";
-  letter-spacing: 6px;
+  content: "✦";
+  color: var(--credit-accent);
+  margin-left: 14px;
+  font-family: 'Marcellus', serif;
+  font-size: 13px;
+  vertical-align: middle;
 }
 .tpost-credit a,
 .tpost-credit a:link,
 .tpost-credit a:visited {
   color: var(--credit-accent) !important;
   text-decoration: none !important;
-  letter-spacing: 8px;
+  font-family: 'Cinzel Decorative', serif;
+  letter-spacing: 6px;
 }
 .tpost-credit a:hover { color: var(--credit-hover) !important; }
 
