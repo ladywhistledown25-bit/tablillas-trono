@@ -9,10 +9,11 @@
   --soft: #221810;
   --card: #1d130c;
   font-family: 'Cormorant Garamond', serif;
-  width: 880px;
-  max-width: 96%;
+  width: 100%;
+  max-width: 550px;
+  min-width: 0;
   margin: 30px auto;
-  padding: 18px;
+  padding: 14px;
   color: var(--ink);
   border: 2px solid var(--accent);
   border-radius: 10px;
@@ -53,7 +54,7 @@ body.light-mode .trono {
 
 /* ---- Cabecera ---- */
 .trono-head {
-  height: 320px;
+  height: 220px;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -78,14 +79,14 @@ body.light-mode .trono-head-overlay {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 26px 34px;
+  padding: 18px 22px;
   text-align: center;
   z-index: 3;
 }
 .trono-kicker {
   font-family: 'Marcellus', serif;
-  font-size: 10px;
-  letter-spacing: 6px;
+  font-size: 9px;
+  letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--accent-light);
   opacity: .95;
@@ -93,9 +94,9 @@ body.light-mode .trono-head-overlay {
 body.light-mode .trono-kicker { color: var(--accent-dark); }
 .trono-title {
   font-family: 'Marcellus', serif;
-  font-size: 58px;
+  font-size: 40px;
   line-height: .9;
-  margin: 10px 0 6px;
+  margin: 8px 0 4px;
   background: linear-gradient(180deg, #fff7dd 0%, var(--accent-light) 38%, var(--accent) 72%, var(--accent-dark) 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -106,8 +107,8 @@ body.light-mode .trono-kicker { color: var(--accent-dark); }
 .trono-subtitle {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: 14px;
-  letter-spacing: 3px;
+  font-size: 12px;
+  letter-spacing: 2px;
   color: var(--accent-light);
 }
 body.light-mode .trono-subtitle { color: var(--accent-dark); }
@@ -123,8 +124,8 @@ body.light-mode .trono-subtitle { color: var(--accent-dark); }
 .trono-divider {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin: 22px 26px;
+  gap: 12px;
+  margin: 16px 20px;
 }
 .trono-divider > span {
   flex: 1;
@@ -139,22 +140,22 @@ body.light-mode .trono-subtitle { color: var(--accent-dark); }
 
 /* ---- Resumen capitular ---- */
 .trono-summary {
-  column-count: 2;
+  column-count: 1;
   column-gap: 36px;
-  padding: 0 30px;
+  padding: 0 22px;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.7;
   text-align: justify;
   color: var(--ink);
 }
 .trono-summary::first-letter {
   font-family: 'Cinzel Decorative', serif;
-  font-size: 74px;
+  font-size: 60px;
   line-height: .72;
   float: left;
-  margin: 4px 16px 0 0;
-  padding: 10px 16px;
+  margin: 4px 14px 0 0;
+  padding: 8px 14px;
   color: var(--accent);
   background: linear-gradient(160deg, var(--accent-light) 0%, var(--accent) 45%, var(--accent-dark) 100%);
   -webkit-background-clip: text;
@@ -172,14 +173,14 @@ body.light-mode .trono-subtitle { color: var(--accent-dark); }
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  padding: 6px 30px 8px;
+  gap: 8px;
+  padding: 4px 20px 6px;
 }
 .trono .trono-chapters a,
 .trono .trono-chapters a:link,
 .trono .trono-chapters a:visited {
-  min-width: 130px;
-  padding: 12px 20px;
+  min-width: 120px;
+  padding: 10px 16px;
   text-align: center;
   font-family: 'Marcellus', serif;
   font-size: 12px;
@@ -205,12 +206,13 @@ body.light-mode .trono-subtitle { color: var(--accent-dark); }
   display: flex;
   align-items: stretch;
   justify-content: center;
-  gap: 26px;
-  padding: 8px 30px 26px;
+  gap: 14px;
+  padding: 6px 14px 18px;
 }
 .trono-card {
   flex: 1;
-  max-width: 340px;
+  min-width: 0;
+  max-width: 250px;
   background: var(--card);
   border: 1px solid var(--accent);
   border-radius: 6px;
@@ -220,7 +222,7 @@ body.light-mode .trono-subtitle { color: var(--accent-dark); }
   transition: transform .5s ease, box-shadow .5s ease;
 }
 .trono-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   box-shadow: 0 18px 40px rgba(0,0,0,.2);
 }
 .trono-card::before {
@@ -233,7 +235,7 @@ body.light-mode .trono-subtitle { color: var(--accent-dark); }
   background: linear-gradient(90deg, var(--accent-light), var(--accent), var(--accent-light));
 }
 .trono-card-img {
-  height: 210px;
+  height: 150px;
   overflow: hidden;
 }
 .trono-card-img img {
@@ -246,12 +248,12 @@ body.light-mode .trono-subtitle { color: var(--accent-dark); }
 }
 .trono-card:hover .trono-card-img img { transform: scale(1.06); }
 .trono-card-body {
-  padding: 18px 20px;
+  padding: 12px 12px;
   text-align: center;
 }
 .trono-card-name {
   font-family: 'Marcellus', serif;
-  font-size: 27px;
+  font-size: 19px;
   line-height: 1;
   color: var(--accent-light);
 }
@@ -259,21 +261,21 @@ body.light-mode .trono-card-name { color: var(--accent-dark); }
 .trono-card-role {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: 13px;
+  font-size: 11px;
   color: var(--ink);
-  margin: 4px 0 10px;
+  margin: 4px 0 8px;
 }
 .trono-card-user {
   display: inline-block;
   font-family: 'Marcellus', serif;
-  font-size: 10px;
-  letter-spacing: 2px;
+  font-size: 9px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--accent-light);
   border: 1px solid var(--accent);
   border-radius: 20px;
-  padding: 4px 14px;
-  margin-bottom: 12px;
+  padding: 3px 10px;
+  margin-bottom: 9px;
 }
 body.light-mode .trono-card-user { color: var(--accent-dark); }
 .trono-card-user a,
@@ -288,54 +290,54 @@ body.light-mode .trono-card-user a:visited { color: var(--accent-dark) !importan
 .trono-card-line {
   width: 70%;
   height: 1px;
-  margin: 0 auto 14px;
+  margin: 0 auto 10px;
   background: linear-gradient(to right, transparent, var(--accent), transparent);
 }
 .trono-data {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px 6px;
+  gap: 6px 4px;
   text-align: left;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 .trono-data .trono-item {
   border-bottom: 1px solid rgba(202,162,77,.35);
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 }
 .trono-data .trono-label {
   font-family: 'Marcellus', serif;
-  font-size: 8px;
-  letter-spacing: 2px;
+  font-size: 7px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--accent-light);
   opacity: .8;
 }
 body.light-mode .trono-data .trono-label { color: var(--accent-dark); }
 .trono-data .trono-value {
-  font-size: 13px;
+  font-size: 11px;
   color: var(--ink);
 }
 .trono-card-desc {
-  font-size: 13px;
-  line-height: 1.55;
+  font-size: 11px;
+  line-height: 1.5;
   text-align: justify;
   color: var(--ink);
 }
 .trono-card-desc::first-letter {
   font-family: 'Marcellus', serif;
-  font-size: 26px;
+  font-size: 20px;
   float: left;
-  padding: 3px 5px 0 0;
+  padding: 2px 4px 0 0;
   color: var(--accent);
 }
 
 /* ---- Pie ---- */
 .trono-footer {
-  padding: 16px 30px;
+  padding: 14px 20px;
   text-align: center;
   font-family: 'Marcellus', serif;
   font-size: 9px;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--accent-light);
   border-top: 1px solid var(--accent);
@@ -394,9 +396,16 @@ body.light-mode .trono-credit {
 }
 .trono-credit a:hover { color: var(--credit-hover) !important; }
 
-@media (max-width: 700px) {
-  .trono-summary { column-count: 1; }
-  .trono-cards { flex-direction: column; align-items: center; }
-  .trono-card { width: 100%; max-width: 360px; }
-  .trono-title { font-size: 40px; }
+@media (max-width: 420px) {
+  .trono { padding: 10px; }
+  .trono-summary { padding: 0 12px; }
+  .trono-head { height: 200px; }
+  .trono-head-content { padding: 14px 16px; }
+  .trono-title { font-size: 30px; }
+  .trono-cards { flex-direction: column; align-items: center; padding: 4px 12px 16px; }
+  .trono-card { width: 100%; max-width: 280px; }
+  .trono-card-img { height: 180px; }
+  .trono-divider { margin: 12px 10px; }
+  .trono-chapters { padding: 2px 10px 4px; }
+  .trono-credit { white-space: normal; }
 }
