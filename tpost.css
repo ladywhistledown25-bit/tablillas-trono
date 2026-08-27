@@ -217,12 +217,13 @@ body.light-mode .tpost-footer { color: var(--accent-dark); }
   --credit-hover: #e8ce8f;
   text-align: center;
   font-family: 'Cinzel Decorative', serif;
-  font-size: 16px;
-  letter-spacing: 6px;
+  font-size: 10px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--credit-accent);
-  margin: 20px auto 4px;
-  text-shadow: 0 0 14px rgba(202,162,77,.45), 0 1px 3px rgba(0,0,0,.45);
+  margin: 14px auto 2px;
+  opacity: .9;
+  text-shadow: 0 0 10px rgba(202,162,77,.35), 0 1px 2px rgba(0,0,0,.4);
   white-space: nowrap;
 }
 body.light-mode .tpost-credit {
@@ -232,17 +233,17 @@ body.light-mode .tpost-credit {
 .tpost-credit::before {
   content: "✦";
   color: var(--credit-accent);
-  margin-right: 14px;
+  margin-right: 10px;
   font-family: 'Marcellus', serif;
-  font-size: 13px;
+  font-size: 9px;
   vertical-align: middle;
 }
 .tpost-credit::after {
   content: "✦";
   color: var(--credit-accent);
-  margin-left: 14px;
+  margin-left: 10px;
   font-family: 'Marcellus', serif;
-  font-size: 13px;
+  font-size: 9px;
   vertical-align: middle;
 }
 .tpost-credit a,
@@ -251,7 +252,7 @@ body.light-mode .tpost-credit {
   color: var(--credit-accent) !important;
   text-decoration: none !important;
   font-family: 'Cinzel Decorative', serif;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
 }
 .tpost-credit a:hover { color: var(--credit-hover) !important; }
 
