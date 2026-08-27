@@ -150,22 +150,27 @@ body.light-mode .tpost-subtitle { color: var(--accent-dark); }
 /* ---- Cuerpo del post ---- */
 .tpost-body {
   padding: 0 30px;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 15px;
   line-height: 1.7;
   text-align: justify;
   color: var(--ink);
 }
 .tpost-body::first-letter {
-  font-family: 'Marcellus', serif;
-  font-size: 46px;
-  line-height: .8;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 58px;
+  line-height: .75;
   float: left;
-  padding: 4px 12px 0 0;
+  margin: 4px 14px 0 0;
+  padding: 9px 14px;
   color: var(--accent);
-  background: linear-gradient(180deg, var(--accent-light), var(--accent-dark));
+  background: linear-gradient(160deg, var(--accent-light) 0%, var(--accent) 45%, var(--accent-dark) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  border: 2px outset var(--accent);
+  text-shadow: 0 0 18px rgba(202,162,77,.5);
+  box-shadow: 0 4px 18px rgba(0,0,0,.35);
 }
 .tpost-body b { color: var(--accent-dark); }
 .tpost-body em { color: var(--accent); }

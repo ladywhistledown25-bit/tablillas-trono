@@ -142,22 +142,27 @@ body.light-mode .trono-subtitle { color: var(--accent-dark); }
   column-count: 2;
   column-gap: 36px;
   padding: 0 30px;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 15px;
   line-height: 1.7;
   text-align: justify;
   color: var(--ink);
 }
 .trono-summary::first-letter {
-  font-family: 'Marcellus', serif;
-  font-size: 62px;
-  line-height: .78;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 74px;
+  line-height: .72;
   float: left;
-  padding: 6px 14px 0 0;
+  margin: 4px 16px 0 0;
+  padding: 10px 16px;
   color: var(--accent);
-  background: linear-gradient(180deg, var(--accent-light), var(--accent-dark));
+  background: linear-gradient(160deg, var(--accent-light) 0%, var(--accent) 45%, var(--accent-dark) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  border: 2px outset var(--accent);
+  text-shadow: 0 0 18px rgba(202,162,77,.5);
+  box-shadow: 0 4px 18px rgba(0,0,0,.35);
 }
 .trono-summary b { color: var(--accent-dark); }
 .trono-summary em { color: var(--accent); }
