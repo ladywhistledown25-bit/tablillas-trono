@@ -143,11 +143,12 @@ body.light-mode .trono-subtitle { color: var(--accent-dark); }
   column-count: 1;
   column-gap: 36px;
   padding: 0 22px;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 14px;
-  line-height: 1.7;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 17px;
+  line-height: 1.65;
   text-align: justify;
   color: var(--ink);
+  word-spacing: 1px;
 }
 .trono-summary::first-letter {
   font-family: 'Cinzel Decorative', serif;
@@ -175,11 +176,11 @@ body.light-mode .trono-subtitle { color: var(--accent-dark); }
   font-size: 10px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--accent-light);
+  color: #b08d4f;
   padding: 10px 0;
   line-height: 1.9;
 }
-body.light-mode .trono-trama { color: var(--accent-dark); }
+body.light-mode .trono-trama { color: #8a6420; }
 .trono-trama .trama-gem {
   color: var(--accent);
   margin: 0 10px;
@@ -188,30 +189,40 @@ body.light-mode .trono-trama { color: var(--accent-dark); }
 
 /* ---- Capítulos (lista numerada) ---- */
 .trono-capitulos {
-  padding: 2px 26px 10px;
+  padding: 2px 22px 10px;
   text-align: center;
 }
 .trono-capitulo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: var(--ink);
-  padding: 5px 0;
-  transition: color .4s ease;
+  font-family: 'Marcellus', serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  padding: 12px 18px;
+  margin: 6px 0;
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+  background: var(--soft);
+  transition: all .4s ease;
+  cursor: pointer;
 }
+body.light-mode .trono-capitulo { color: var(--accent-dark); background: var(--soft); }
 .trono-capitulo .trono-cap-num {
   font-family: 'Marcellus', serif;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--accent);
   font-variant: small-caps;
-  margin-right: 8px;
+  margin-right: 10px;
   letter-spacing: 1px;
 }
 body.light-mode .trono-capitulo .trono-cap-num { color: var(--accent-dark); }
-.trono-capitulo:hover { color: var(--accent-light); }
-.trono-capitulo + .trono-capitulo {
-  border-top: 1px dashed rgba(202,162,77,.3);
+.trono-capitulo:hover {
+  color: var(--soft) !important;
+  background: linear-gradient(180deg, var(--accent), var(--accent-dark));
+  border-color: var(--accent-dark);
+  box-shadow: 0 0 16px rgba(202,162,77,.4);
 }
+.trono-capitulo:hover .trono-cap-num { color: var(--soft) !important; }
 
 /* ---- Personajes ---- */
 .trono-cards {
