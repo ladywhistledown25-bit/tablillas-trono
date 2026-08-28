@@ -168,37 +168,49 @@ body.light-mode .trono-subtitle { color: var(--accent-dark); }
 .trono-summary b { color: var(--accent-dark); }
 .trono-summary em { color: var(--accent); }
 
-/* ---- Capítulos ---- */
-.trono-chapters {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-  padding: 4px 20px 6px;
-}
-.trono .trono-chapters a,
-.trono .trono-chapters a:link,
-.trono .trono-chapters a:visited {
-  min-width: 120px;
-  padding: 10px 16px;
+/* ---- Datos de la trama (una línea) ---- */
+.trono-trama {
   text-align: center;
   font-family: 'Marcellus', serif;
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: 10px;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--accent-light) !important;
-  border: 1px solid var(--accent);
-  border-radius: 2px;
-  background: var(--soft);
-  text-decoration: none !important;
-  transition: all .4s ease;
+  color: var(--accent-light);
+  padding: 10px 0;
+  line-height: 1.9;
 }
-.trono .trono-chapters a:hover,
-.trono .trono-chapters a:focus {
-  color: var(--soft) !important;
-  background: linear-gradient(180deg, var(--accent), var(--accent-dark));
-  border-color: var(--accent-dark);
-  box-shadow: 0 0 16px rgba(202,162,77,.4);
+body.light-mode .trono-trama { color: var(--accent-dark); }
+.trono-trama .trama-gem {
+  color: var(--accent);
+  margin: 0 10px;
+  font-size: 9px;
+}
+
+/* ---- Capítulos (lista numerada) ---- */
+.trono-capitulos {
+  padding: 2px 26px 10px;
+  text-align: center;
+}
+.trono-capitulo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--ink);
+  padding: 5px 0;
+  transition: color .4s ease;
+}
+.trono-capitulo .trono-cap-num {
+  font-family: 'Marcellus', serif;
+  font-size: 11px;
+  color: var(--accent);
+  font-variant: small-caps;
+  margin-right: 8px;
+  letter-spacing: 1px;
+}
+body.light-mode .trono-capitulo .trono-cap-num { color: var(--accent-dark); }
+.trono-capitulo:hover { color: var(--accent-light); }
+.trono-capitulo + .trono-capitulo {
+  border-top: 1px dashed rgba(202,162,77,.3);
 }
 
 /* ---- Personajes ---- */
@@ -406,6 +418,7 @@ body.light-mode .trono-credit {
   .trono-card { width: 100%; max-width: 280px; }
   .trono-card-img { height: 180px; }
   .trono-divider { margin: 12px 10px; }
-  .trono-chapters { padding: 2px 10px 4px; }
+  .trono-trama { font-size: 9px; letter-spacing: 2px; padding: 8px 6px; }
+  .trono-capitulos { padding: 2px 16px 8px; }
   .trono-credit { white-space: normal; }
 }
