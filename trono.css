@@ -143,8 +143,8 @@ body.light-mode .trono-subtitle { color: var(--accent-dark); }
   column-count: 1;
   column-gap: 36px;
   padding: 0 22px;
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 17px;
+  font-family: Georgia, serif;
+  font-size: 12px;
   line-height: 1.65;
   text-align: justify;
   color: var(--ink);
